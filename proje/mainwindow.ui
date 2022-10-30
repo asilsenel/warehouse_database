@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelName">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ad:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelProCode">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>60</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ürün Kodu:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCat">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kategori:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelQuantity">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miktar:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBrand">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Marka:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPrice">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fiyat:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditName">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditProCode">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditCat">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditQuantity">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditBrand">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>150</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPrice">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>180</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddNew">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Yeni Ekle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ekle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDimin">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Çıkar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnChange">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>370</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Değiştir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>420</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sil</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnClear">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>470</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temizle</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonTR">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>540</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TR</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonEN">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>570</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>30</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ara</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditSearch">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>421</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelProCount">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>520</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ürün Sayısı:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>520</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableViewProject">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>70</y>
+      <width>191</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditSearchProject">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>30</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearchProject">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>30</y>
+      <width>61</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ara</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelProCountProject">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>510</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proje Sayısı:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberProject">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>510</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView3">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>70</y>
+      <width>371</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditSearch3">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>30</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch3">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>30</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ara</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberProject_2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>510</y>
+      <width>64</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelProCountProject_2">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>510</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Projede Kullanılan Ürün Sayısı:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearchProject_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>550</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Göster</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
